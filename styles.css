@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variable */
+:root {
+
+    --crema: #f7f2e4;
+    --fondo: #fafafa;
+    --letras1: #052324 ;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: var(--fondo);
+}
+
+/* Header */
+
+.Logo {
+    height: 90%;
+    cursor: pointer;
+}
+
+.cart-icon {
+    cursor: pointer;
+}
+
+
+header {
+background: #f7f2e4;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px 40px;
+height: 85px;
+}
+
+.navbar,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    gap: 100px;
+}
+
+.navbar-list {
+    gap: 20px;
+    font-size: 16px;
+}
+
+.navbar-list a {
+    color: var(--letras1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--letras1);
+
+    
+}
+
+#hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+    
+}
+
+.hero-info {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+width: 50%;
+}
+
+.hero-info h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color:  var(--letras1)  
+}
+
+.hero-info p {
+ text-align: justify;
+font-size: 18px;
+width: 90%;
+}
+
+.hero-info span {
+    font-weight: bold;
+
+}
+
+.hero-info a {
+    background-color: #db7b3f ;
+    color: #052324;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.hero-info a:hover {
+    background-color: #ffbc92;
+}
+
+.hero-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+    
+}
+
+.hero-card img {
+    border-radius: 15px;
+}
+
+.hero-card-info {
+    text-align: center;
+}
+
+.hero-card-top h3 {
+    color: #25545c ;
+}
+
+#info {
+    background-color: whitesmoke;
+ padding: 70px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+
+}
+
+#info h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.info-card-container {
+    
+    display: flex;
+    gap: 20px;
+}
+
+.info-card {
+    background-color: white;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    border-radius: 10px;
+
+}
+
+.info-card img {
+    width: 300px;
+}
