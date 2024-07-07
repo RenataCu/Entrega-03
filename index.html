@@ -6,6 +6,7 @@
     <title>Mi tienda de Mascotas</title>
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -14,10 +15,18 @@
         <!-- Logo -->
     
     <img src="./Img/logo.png" class="Logo" alt="">
+    
 
     <!-- Navbar y Carrito -->
 
     <nav class="navbar">
+
+        
+         <label for="menu-burger" class="label-menu">
+        <i class="fa-solid fa-bars" ></i>
+     </label>
+
+  <input type="checkbox" name="" id="menu-burger">
         <ul class="navbar-list">
             <li><a href="#">Home</a></li>
             <li><a href="#">Descubre</a></li>
@@ -29,7 +38,8 @@
 
         <!-- Carrito -->
 
-        <img src="./Img/cart-solid-24.png" alt="Carrito" class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        
 
         
     </nav>
@@ -86,9 +96,100 @@
                       <a href="#"><img src="./Img/limpieza.jpg" alt="aseo"></a>
                       <h3>Productos de aseo</h3>  
                     </div>
+                </div>
             </div>
 
         </section>
+
+        <section id="info2">
+            
+            <div class="info2-card-container">
+                
+                <!-- Tarjeta 1 -->
+
+                <div class="info2-card">
+                  <img src="./Img/icons8-entrega-64.png" alt="entrega">
+                  <hr>
+                  <h3>Transporte</h3> 
+                  <p>Envío gratis en Valparaíso por compras sobre 20.000$</p>
+                  
+                </div>
+
+                <!-- Tarjeta 2 -->
+            
+                
+             <div class="info2-card">
+                    <img src="./Img/icons8-tienda-64.png" alt="tienda">
+                    <hr>
+                  <h3>Retiro en Tienda</h3>
+                  <p>Retiro en cualquiera de nuestras sucursales.</p> 
+                  
+             </div>
+
+             <!-- Tarjeta 3 -->
+                
+                
+             <div class="info2-card">
+                      <img src="./Img/icons8-reloj-100.png" alt="reloj">
+                      <hr>
+                      <h3>Horario</h3> 
+                      <p>Lunes a Viernes: 10:00 am – 6:00pm </p> 
+                      
+                      
+             </div>
+
+             <!-- Tarjeta 4 -->
+
+                
+             <div class="info2-card">
+                      <img src="./Img/icons8-garantía-64.png" alt="garantía">
+                      <hr>
+                      <h3>Garantía</h3> 
+                      <p>100% garantizado</p>
+                     
+             </div> 
+                
+
+
+            </div>
+        
+
+        </section>
+
+        <!-- Contactos -->
+
+        <section id="contactos">
+            <div class="contact-cont">
+            <div class="contactos-logo">  
+                <img src="./Img/logo.png" alt="Logo">
+            </div>
+              <div class="contactos-info">
+                <h3>Contactanos</h3>
+                <ul class="lista-contactos">
+                    <li>Mail: <a href="#">ventas@petstore.cl</a></li>
+                    <li>Teléfono: +56 999 99999</li>
+                    <li>Redes sociales: 
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i></li>
+                </ul>
+               </div> 
+            </div>   
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+<ul class="footer-links">
+
+    <li><p>©PetStore - Todos los derechos reservados</p></li>
+    <li><a href="#">Soporte</a></li>
+</ul>
+        </footer>
+
+
+
+
 
     
 

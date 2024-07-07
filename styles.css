@@ -32,8 +32,14 @@ body {
     cursor: pointer;
 }
 
-.cart-icon {
+i {
+    font-size: 23px;
+    color: var(--letras1);
     cursor: pointer;
+}
+
+i:hover {
+    color: #ff8132;
 }
 
 
@@ -44,6 +50,8 @@ justify-content: space-between;
 align-items: center;
 padding: 0px 40px;
 height: 85px;
+position: sticky;
+top: 0;
 }
 
 .navbar,
@@ -64,6 +72,19 @@ height: 85px;
 
 .navbar-list a {
     color: var(--letras1);
+}
+
+#menu-burger,
+.label-menu {
+display: none;
+}
+
+#menu-burger:hover {
+    color: #ff8132;
+}
+
+a:hover {
+    color: #ff8132;
 }
 
 main {
@@ -111,7 +132,7 @@ width: 90%;
 }
 
 .hero-info a {
-    background-color: #db7b3f ;
+    background-color: #ff8132 ;
     color: #052324;
     border-radius: 10px;
     padding: 5px 10px;
@@ -151,6 +172,7 @@ width: 90%;
     justify-content: center;
     align-items: center;
     gap: 60px;
+    width: 100%;
 
 
 }
@@ -180,5 +202,205 @@ width: 90%;
 }
 
 .info-card img {
-    width: 300px;
+    width: 260px;
+}
+
+#info2 {
+
+ padding: 70px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+}
+
+#info2 h3 {
+    color: #25545c;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#info2 hr {
+    position: relative;
+        top: 10px;
+        border: none;
+        height: 2px;
+        background: #25545c;
+     width: 12em;
+}
+
+.info2-card-container {
+    
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    
+}
+
+
+.info2-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    
+    
+}
+
+.info2-card img {
+    width: 64px;
+}
+
+#contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  
+}
+
+.contact-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactos-logo img {
+    width: 35%;
+}
+
+.lista-contactos:nth-child(3) {
+    gap: 12px;
+}
+
+.lista-contactos a {
+    color: var(--letras1);
+}
+
+a:hover {
+    color: #ff8132;
+}
+
+
+
+footer {
+    color: var(--letras1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 0;
+    font-size: 12px;
+}
+
+footer a,
+footer p {
+    color: var(--letras1);
+} 
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+@media (max-width:998px){
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .navbar-list{
+        display: none;
+        position: absolute;
+        top: 85px;
+        left: 65%;
+        right: 5%;
+        flex-direction: column;
+        background-color: #f7f2e4;
+        width: 35%;
+        border-top: 0px;
+        border-radius: 0 0 5px 5px;
+        padding: 45px 30px;
+        align-items: center;
+        z-index: 3;
+    }
+
+    .navbar-list a {
+        font-size: 14px;
+    }
+
+    .label-menu {
+        display: flex;
+    }
+
+    #menu-burger:checked + .navbar-list {
+        display: flex;
+    }
+    
+#hero {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-card {
+    display: flex;
+    width: 50%;
+padding: 0 20px;
+}
+
+.hero-card h3 {
+font-size: 16px;
+}
+
+.hero-info h1 {
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+.hero-info p {
+    font-size: 16px;
+}
+
+.info-card-container {
+    flex-direction: column;
+}
+
+.info2-card-container {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info2-card {
+
+    width: 20%;
+    height: 20%;
+}
+
+.contact-cont {
+    justify-content: center;
+    padding: 0 40px;
+}
+}
+
+@media (max-width:525px) {
+
+    .hero-info {
+        width: 100%;
+    }
 }
